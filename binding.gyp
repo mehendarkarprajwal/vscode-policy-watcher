@@ -52,7 +52,7 @@
                         "AIX",
                     ],
                     "cflags": [
-                        "-O2", "-fstack-protector-strong"
+                        "-O2"
                     ]
                 }],
                 ["OS=='win'", {
