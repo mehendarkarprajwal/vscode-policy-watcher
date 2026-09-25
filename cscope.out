@@ -1,4 +1,4 @@
-cscope 15 $HOME/Documents/vscode-policy-watcher -q 0000000288 0000033250
+cscope 15 $HOME/Documents/vscode-policy-watcher -q 0000000289 0000033287
 	@src/Policy.hh
 
 6 #iâdeà
@@ -521,19 +521,27 @@ ExecutiÚProg»ss
 ´og»ss
 )
 
-32 
+34 cÚ¡ 
+PÞicy
+ *
+dummy
+ = 
+nuÎ±r
+;
+
+35 
 ´og»ss
 .
 	`S’d
-(
-nuÎ±r
-, 0);
+(&
+dummy
+, 1);
 
-33 
+36 
 	}
 }
 
-35 
+38 
 	gPÞicyW©ch”
 ::
 	$OnProg»ss
@@ -547,7 +555,7 @@ size_t
 couÁ
 )
 
-37 
+41 
 HªdËScÝe
  
 	`scÝe
@@ -555,7 +563,7 @@ HªdËScÝe
 	`Env
 ());
 
-38 autØ
+42 autØ
 »suÉ
  = 
 Objeù
@@ -565,7 +573,7 @@ Objeù
 	`Env
 ());
 
-39 
+43 
 	`C®lback
 ().
 	`C®l
@@ -577,11 +585,11 @@ Objeù
 »suÉ
 });
 
-40 
+44 
 	}
 }
 
-42 
+46 
 	gPÞicyW©ch”
 ::
 	$OnOK
@@ -589,7 +597,7 @@ Objeù
 	}
 }
 
-43 
+47 
 PÞicyW©ch”
 ::
 	$Di¥o£

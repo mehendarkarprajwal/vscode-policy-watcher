@@ -28,12 +28,16 @@ void PolicyWatcher::OnExecute(Napi::Env env)
 
 void PolicyWatcher::Execute(const ExecutionProgress &progress)
 {
-  // Send one empty update so the JS callback is invoked and the caller unblocks.
-  progress.Send(nullptr, 0);
+  // Send a single-item update (count=1) so AsyncProgressQueueWorker guarantees
+  // OnProgress is invoked. The pointer value is never dereferenced because
+  // OnProgress ignores the policies array entirely.
+  const Policy *dummy = nullptr;
+  progress.Send(&dummy, 1);
 }
 
 void PolicyWatcher::OnProgress(const Policy *const *policies, size_t count)
 {
+  // Fire the JS callback with an empty object so the caller's Promise resolves.
   HandleScope scope(Env());
   auto result = Object::New(Env());
   Callback().Call(Receiver().Value(), {result});
