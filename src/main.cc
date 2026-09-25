@@ -23,7 +23,7 @@ Value CreateWatcher(const CallbackInfo &info)
 {
   auto env = info.Env();
 
-#if !defined(WINDOWS) && !defined(MACOS)
+#if !defined(WINDOWS) && !defined(MACOS) && !defined(AIX)
   throw TypeError::New(env, "Unsupported platform");
 #endif
 

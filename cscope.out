@@ -1,0 +1,6364 @@
+cscope 15 $HOME/Documents/vscode-policy-watcher -q 0000000288 0000033007
+	@src/Policy.hh
+
+6 #iâdeà
+POLICY_H
+
+
+7 
+	#POLICY_H
+
+
+	)
+
+9 
+	~<Çpi.h
+>
+
+11 
+usšg
+ 
+Çme¥aû
+ 
+	gN­i
+;
+
+13 şas 
+	cPŞicyReäeshResuÉ
+ {
+
+14 
+	mUpd©ed
+,
+
+15 
+	mUnchªged
+,
+
+16 
+	mRemoved
+,
+
+17 
+	mNÙS‘
+
+
+20 şas 
+	cPŞicy
+
+
+22 
+	mpublic
+:
+
+23 
+vœtu®
+ ~
+	$PŞicy
+() {}
+
+24 
+vœtu®
+ 
+PŞicyReäeshResuÉ
+ 
+	`»äesh
+() = 0;
+
+25 
+vœtu®
+ 
+V®ue
+ 
+	$g‘V®ue
+(
+Env
+ 
+’v
+) const = 0;
+
+26 cÚ¡ 
+¡d
+::
+¡ršg
+ 
+Çme
+;
+
+28 
+	$PŞicy
+(cÚ¡ 
+¡d
+::
+¡ršg
+ 
+Çme
+)
+
+29 : 
+	$Çme
+(
+Çme
+è{
+	}
+}
+
+	@src/PolicyWatcher.hh
+
+6 #iâdeà
+POLICY_WATCHER_H
+
+
+7 
+	#POLICY_WATCHER_H
+
+
+	)
+
+9 
+	~<Çpi.h
+>
+
+10 
+	~<veùÜ
+>
+
+11 
+	~"PŞicy.hh
+"
+
+13 #ifdeà
+WINDOWS
+
+
+14 
+	~<wšdows.h
+>
+
+17 #ifdeà
+MACOS
+
+
+18 
+	#BoŞ—n
+ 
+CFBoŞ—n
+
+
+	)
+
+19 
+	~<CÜeS”viûs/CÜeS”viûs.h
+>
+
+22 
+usšg
+ 
+Çme¥aû
+ 
+	gN­i
+;
+
+24 
+şass
+ 
+	gPŞicyW©ch”
+ : 
+public
+ 
+AsyncProg»ssQueueWÜk”
+<cÚ¡ 
+PŞicy
+ *>
+
+26 
+public
+:
+
+27 
+PŞicyW©ch”
+(
+¡d
+::
+¡ršg
+ 
+´oduùName
+, cÚ¡ 
+FunùiÚ
+ &
+okC®lback
+);
+
+28 
+PŞicyW©ch”
+(
+¡d
+::
+¡ršg
+ 
+´oduùName
+, cÚ¡ 
+FunùiÚ
+ &
+okC®lback
+, std::¡ršg 
+»gi¡ryP©h
+)
+
+29 : 
+PŞicyW©ch”
+(
+´oduùName
+, 
+okC®lback
+)
+
+31 
+	gthis
+->
+	g»gi¡ryP©h
+ = 
+»gi¡ryP©h
+;
+
+33 ~
+PŞicyW©ch”
+();
+
+35 
+AddSŒšgPŞicy
+(cÚ¡ 
+¡d
+::
+¡ršg
+ 
+Çme
+);
+
+36 
+AddNumb”PŞicy
+(cÚ¡ 
+¡d
+::
+¡ršg
+ 
+Çme
+);
+
+37 
+AddBoŞ—nPŞicy
+(cÚ¡ 
+¡d
+::
+¡ršg
+ 
+Çme
+);
+
+38 
+AddUniÚPŞicy
+(cÚ¡ 
+¡d
+::
+¡ršg
+ 
+Çme
+, cÚ¡ std::
+veùÜ
+<¡d::¡ršg> &
+ty³s
+);
+
+40 
+OnExecu‹
+(
+N­i
+::
+Env
+ 
+’v
+);
+
+41 
+Execu‹
+(cÚ¡ 
+ExecutiÚProg»ss
+ &
+´og»ss
+);
+
+42 
+OnProg»ss
+(cÚ¡ 
+PŞicy
+ *cÚ¡ *
+pŞic›s
+, 
+size_t
+ 
+couÁ
+);
+
+43 
+OnOK
+();
+
+44 
+Di¥o£
+();
+
+46 
+	g´Ùeùed
+:
+
+47 
+¡d
+::
+¡ršg
+ 
+´oduùName
+;
+
+48 
+	g¡d
+::
+¡ršg
+ 
+»gi¡ryP©h
+;
+
+49 
+	g¡d
+::
+veùÜ
+<
+¡d
+::
+unique_±r
+<
+PŞicy
+>> 
+pŞic›s
+;
+
+51 #ifdeà
+WINDOWS
+
+
+52 
+HANDLE
+ 
+	ghªdËs
+[4];
+
+55 #ifdeà
+MACOS
+
+
+56 
+FSEv’tSŒ—mRef
+ 
+	g¡»am
+;
+
+57 
+di¥©ch_£m­hÜe_t
+ 
+	g£m
+;
+
+58 
+boŞ
+ 
+	gdi¥o£d
+;
+
+	@src/aix/PolicyWatcher.cc
+
+6 
+	~"../PŞicyW©ch”.hh
+"
+
+8 
+usšg
+ 
+Çme¥aû
+ 
+	gN­i
+;
+
+10 
+	gPŞicyW©ch”
+::
+	$PŞicyW©ch”
+(
+¡d
+::
+¡ršg
+ 
+´oduùName
+, cÚ¡ 
+FunùiÚ
+ &
+okC®lback
+)
+
+11 : 
+	`AsyncProg»ssQueueWÜk”
+(
+okC®lback
+),
+
+12 
+	$´oduùName
+(
+´oduùName
+)
+
+14 
+	}
+}
+
+16 
+	gPŞicyW©ch”
+::~
+	$PŞicyW©ch”
+()
+
+18 
+	}
+}
+
+20 
+PŞicyW©ch”
+::
+	$AddSŒšgPŞicy
+(cÚ¡ 
+¡d
+::
+¡ršg
+ 
+Çme
+è{
+	}
+}
+
+21 
+PŞicyW©ch”
+::
+	$AddNumb”PŞicy
+(cÚ¡ 
+¡d
+::
+¡ršg
+ 
+Çme
+è{
+	}
+}
+
+22 
+PŞicyW©ch”
+::
+	$AddBoŞ—nPŞicy
+(cÚ¡ 
+¡d
+::
+¡ršg
+ 
+Çme
+è{
+	}
+}
+
+23 
+PŞicyW©ch”
+::
+AddUniÚPŞicy
+(cÚ¡ 
+¡d
+::
+¡ršg
+ 
+Çme
+, cÚ¡ std::
+veùÜ
+<¡d::¡ršg> &
+ty³s
+) {}
+
+24 
+PŞicyW©ch”
+::
+	$OnExecu‹
+(
+N­i
+::
+Env
+ 
+’v
+è{
+	}
+}
+
+25 
+PŞicyW©ch”
+::
+	$Execu‹
+(cÚ¡ 
+ExecutiÚProg»ss
+ &
+´og»ss
+è{
+	}
+}
+
+26 
+PŞicyW©ch”
+::
+	$OnProg»ss
+(cÚ¡ 
+PŞicy
+ *cÚ¡ *
+pŞic›s
+, 
+size_t
+ 
+couÁ
+è{
+	}
+}
+
+27 
+	gPŞicyW©ch”
+::
+	$OnOK
+(è{
+	}
+}
+
+28 
+PŞicyW©ch”
+::
+	$Di¥o£
+(è{
+	}
+}
+
+	@src/linux/PolicyWatcher.cc
+
+6 
+	~"../PŞicyW©ch”.hh
+"
+
+8 
+usšg
+ 
+Çme¥aû
+ 
+	gN­i
+;
+
+10 
+	gPŞicyW©ch”
+::
+	$PŞicyW©ch”
+(
+¡d
+::
+¡ršg
+ 
+´oduùName
+, cÚ¡ 
+FunùiÚ
+ &
+okC®lback
+)
+
+11 : 
+	`AsyncProg»ssQueueWÜk”
+(
+okC®lback
+),
+
+12 
+	$´oduùName
+(
+´oduùName
+)
+
+14 
+	}
+}
+
+16 
+	gPŞicyW©ch”
+::~
+	$PŞicyW©ch”
+()
+
+18 
+	}
+}
+
+20 
+PŞicyW©ch”
+::
+	$AddSŒšgPŞicy
+(cÚ¡ 
+¡d
+::
+¡ršg
+ 
+Çme
+è{
+	}
+}
+
+21 
+PŞicyW©ch”
+::
+	$AddNumb”PŞicy
+(cÚ¡ 
+¡d
+::
+¡ršg
+ 
+Çme
+è{
+	}
+}
+
+22 
+PŞicyW©ch”
+::
+	$AddBoŞ—nPŞicy
+(cÚ¡ 
+¡d
+::
+¡ršg
+ 
+Çme
+è{
+	}
+}
+
+23 
+PŞicyW©ch”
+::
+AddUniÚPŞicy
+(cÚ¡ 
+¡d
+::
+¡ršg
+ 
+Çme
+, cÚ¡ std::
+veùÜ
+<¡d::¡ršg> &
+ty³s
+) {}
+
+24 
+PŞicyW©ch”
+::
+	$OnExecu‹
+(
+N­i
+::
+Env
+ 
+’v
+è{
+	}
+}
+
+25 
+PŞicyW©ch”
+::
+	$Execu‹
+(cÚ¡ 
+ExecutiÚProg»ss
+ &
+´og»ss
+è{
+	}
+}
+
+26 
+PŞicyW©ch”
+::
+	$OnProg»ss
+(cÚ¡ 
+PŞicy
+ *cÚ¡ *
+pŞic›s
+, 
+size_t
+ 
+couÁ
+è{
+	}
+}
+
+27 
+	gPŞicyW©ch”
+::
+	$OnOK
+(è{
+	}
+}
+
+28 
+PŞicyW©ch”
+::
+	$Di¥o£
+(è{
+	}
+}
+
+	@src/macos/BooleanPolicy.cc
+
+6 
+	~"BoŞ—nPŞicy.hh
+"
+
+8 
+usšg
+ 
+Çme¥aû
+ 
+	gN­i
+;
+
+10 
+	gBoŞ—nPŞicy
+::
+	$BoŞ—nPŞicy
+(cÚ¡ 
+¡d
+::
+¡ršg
+ 
+Çme
+, cÚ¡ std::¡ršg &
+´oduùName
+)
+
+11 : 
+	$P»ã»nûsPŞicy
+(
+Çme
+, 
+´oduùName
+)
+
+13 
+	}
+}
+
+15 
+V®ue
+ 
+	gBoŞ—nPŞicy
+::
+	$g‘JSV®ue
+(
+Env
+ 
+’v
+, 
+boŞ
+ 
+v®ue
+) const
+
+17  
+N­i
+::
+BoŞ—n
+::
+	`New
+(
+’v
+, 
+v®ue
+);
+
+18 
+	}
+}
+
+20 
+	g¡d
+::
+İtiÚ®
+<
+boŞ
+> 
+BoŞ—nPŞicy
+::
+	$»ad
+() const
+
+22 autØ
+´ef
+ = 
+	`CFP»ã»nûsCİyAµV®ue
+(
+key
+, 
+­pID
+);
+
+24 ià(
+´ef
+ =ğ
+NULL
+)
+
+25  
+¡d
+::
+nuÎİt
+;
+
+27 ià(
+	`CFG‘Ty³ID
+(
+´ef
+è!ğ
+	`CFBoŞ—nG‘Ty³ID
+())
+
+29 
+	`CFR–—£
+(
+´ef
+);
+
+30  
+¡d
+::
+nuÎİt
+;
+
+33 
+boŞ
+ 
+v®ue
+ = (
+´ef
+ =ğ
+kCFBoŞ—nTrue
+);
+
+34 
+	`CFR–—£
+(
+´ef
+);
+
+35  
+v®ue
+;
+
+36 
+	}
+}
+
+	@src/macos/BooleanPolicy.hh
+
+6 #iâdeà
+MAC_BOOLEAN_POLICY_H
+
+
+7 
+	#MAC_BOOLEAN_POLICY_H
+
+
+	)
+
+9 
+	~<Çpi.h
+>
+
+10 
+	~"P»ã»nûsPŞicy.hh
+"
+
+12 
+usšg
+ 
+Çme¥aû
+ 
+	gN­i
+;
+
+14 
+şass
+ 
+	gBoŞ—nPŞicy
+ : 
+public
+ 
+P»ã»nûsPŞicy
+<
+boŞ
+>
+
+16 
+public
+:
+
+17 
+BoŞ—nPŞicy
+(cÚ¡ 
+¡d
+::
+¡ršg
+ 
+Çme
+, cÚ¡ std::¡ršg &
+´oduùName
+);
+
+18 
+	g¡d
+::
+İtiÚ®
+<
+boŞ
+> 
+»ad
+(ècÚ¡ 
+ov”ride
+;
+
+20 
+	g´Ùeùed
+:
+
+21 
+V®ue
+ 
+g‘JSV®ue
+(
+Env
+ 
+’v
+, 
+boŞ
+ 
+v®ue
+ècÚ¡ 
+	gov”ride
+;
+
+	@src/macos/NumberPolicy.cc
+
+6 
+	~"Numb”PŞicy.hh
+"
+
+8 
+usšg
+ 
+Çme¥aû
+ 
+	gN­i
+;
+
+10 
+	gNumb”PŞicy
+::
+	$Numb”PŞicy
+(cÚ¡ 
+¡d
+::
+¡ršg
+ 
+Çme
+, cÚ¡ std::¡ršg &
+´oduùName
+)
+
+11 : 
+	$P»ã»nûsPŞicy
+(
+Çme
+, 
+´oduùName
+)
+
+13 
+	}
+}
+
+15 
+V®ue
+ 
+	gNumb”PŞicy
+::
+	$g‘JSV®ue
+(
+Env
+ 
+’v
+, 
+v®ue
+) const
+
+17  
+Numb”
+::
+	`New
+(
+’v
+, 
+¡©ic_ÿ¡
+<>(
+v®ue
+));
+
+18 
+	}
+}
+
+20 
+	g¡d
+::
+İtiÚ®
+<> 
+Numb”PŞicy
+::
+	$»ad
+() const
+
+22 autØ
+´ef
+ = 
+	`CFP»ã»nûsCİyAµV®ue
+(
+key
+, 
+­pID
+);
+
+24 ià(
+´ef
+ =ğ
+NULL
+)
+
+25  
+¡d
+::
+nuÎİt
+;
+
+27 ià(
+	`CFG‘Ty³ID
+(
+´ef
+è!ğ
+	`CFNumb”G‘Ty³ID
+())
+
+29 
+	`CFR–—£
+(
+´ef
+);
+
+30  
+¡d
+::
+nuÎİt
+;
+
+33 
+v®ue
+;
+
+34 ià(
+	`CFNumb”G‘V®ue
+((
+CFNumb”Ref
+)
+´ef
+, 
+kCFNumb”LÚgLÚgTy³
+, &
+v®ue
+))
+
+36 
+	`CFR–—£
+(
+´ef
+);
+
+37  
+v®ue
+;
+
+40 
+	`CFR–—£
+(
+´ef
+);
+
+41  
+¡d
+::
+nuÎİt
+;
+
+42 
+	}
+}
+
+	@src/macos/NumberPolicy.hh
+
+6 #iâdeà
+MAC_NUMBER_POLICY_H
+
+
+7 
+	#MAC_NUMBER_POLICY_H
+
+
+	)
+
+9 
+	~<Çpi.h
+>
+
+10 
+	~"P»ã»nûsPŞicy.hh
+"
+
+12 
+usšg
+ 
+Çme¥aû
+ 
+	gN­i
+;
+
+14 
+şass
+ 
+	gNumb”PŞicy
+ : 
+public
+ 
+P»ã»nûsPŞicy
+<>
+
+16 
+public
+:
+
+17 
+Numb”PŞicy
+(cÚ¡ 
+¡d
+::
+¡ršg
+ 
+Çme
+, cÚ¡ std::¡ršg &
+´oduùName
+);
+
+18 
+	g¡d
+::
+İtiÚ®
+<> 
+»ad
+(ècÚ¡ 
+ov”ride
+;
+
+20 
+	g´Ùeùed
+:
+
+21 
+V®ue
+ 
+g‘JSV®ue
+(
+Env
+ 
+’v
+, 
+v®ue
+ècÚ¡ 
+	gov”ride
+;
+
+	@src/macos/PolicyWatcher.cc
+
+6 
+	~"../PŞicyW©ch”.hh
+"
+
+7 
+	~"SŒšgPŞicy.hh
+"
+
+8 
+	~"Numb”PŞicy.hh
+"
+
+9 
+	~"BoŞ—nPŞicy.hh
+"
+
+10 
+	~"UniÚPŞicy.hh
+"
+
+11 
+	~<th»ad
+>
+
+13 
+usšg
+ 
+Çme¥aû
+ 
+	gN­i
+;
+
+15 
+	$f£v’ts_ÿÎback
+(
+CÚ¡FSEv’tSŒ—mRef
+ 
+¡»amRef
+,
+
+16 *
+ş›ÁC®lBackInfo
+,
+
+17 
+size_t
+ 
+numEv’ts
+,
+
+18 *
+ev’tP©hs
+,
+
+19 cÚ¡ 
+FSEv’tSŒ—mEv’tFÏgs
+ 
+ev’tFÏgs
+[],
+
+20 cÚ¡ 
+FSEv’tSŒ—mEv’tId
+ 
+ev’tIds
+[])
+
+22 
+di¥©ch_£m­hÜe_t
+ *
+£m
+ = (di¥©ch_£m­hÜe_ˆ*)
+ş›ÁC®lBackInfo
+;
+
+23 
+	`di¥©ch_£m­hÜe_sigÇl
+(*
+£m
+);
+
+24 
+	}
+}
+
+26 
+	gPŞicyW©ch”
+::
+	$PŞicyW©ch”
+(
+¡d
+::
+¡ršg
+ 
+´oduùName
+, cÚ¡ 
+FunùiÚ
+ &
+okC®lback
+)
+
+27 : 
+	`AsyncProg»ssQueueWÜk”
+(
+okC®lback
+),
+
+28 
+	`´oduùName
+(
+´oduùName
+),
+
+29 
+	`¡»am
+(
+nuÎ±r
+),
+
+30 
+	`£m
+(
+nuÎ±r
+),
+
+31 
+	$di¥o£d
+(
+çl£
+)
+
+33 
+	}
+}
+
+35 
+	gPŞicyW©ch”
+::~
+	$PŞicyW©ch”
+()
+
+37 ià(
+¡»am
+) {
+
+38 
+	`FSEv’tSŒ—mStİ
+(
+¡»am
+);
+
+39 
+	`FSEv’tSŒ—mInv®id©e
+(
+¡»am
+);
+
+40 
+	`FSEv’tSŒ—mR–—£
+(
+¡»am
+);
+
+42 ià(
+£m
+) {
+
+43 
+	`di¥©ch_»Ëa£
+(
+£m
+);
+
+45 
+	}
+}
+
+47 
+	gPŞicyW©ch”
+::
+	$AddSŒšgPŞicy
+(cÚ¡ 
+¡d
+::
+¡ršg
+ 
+Çme
+)
+
+49 
+pŞic›s
+.
+	`push_back
+(
+¡d
+::
+make_unique
+<
+SŒšgPŞicy
+>(
+Çme
+, 
+´oduùName
+));
+
+50 
+	}
+}
+
+51 
+	gPŞicyW©ch”
+::
+	$AddNumb”PŞicy
+(cÚ¡ 
+¡d
+::
+¡ršg
+ 
+Çme
+)
+
+53 
+pŞic›s
+.
+	`push_back
+(
+¡d
+::
+make_unique
+<
+Numb”PŞicy
+>(
+Çme
+, 
+´oduùName
+));
+
+54 
+	}
+}
+
+56 
+	gPŞicyW©ch”
+::
+	$AddBoŞ—nPŞicy
+(cÚ¡ 
+¡d
+::
+¡ršg
+ 
+Çme
+)
+
+58 
+pŞic›s
+.
+	`push_back
+(
+¡d
+::
+make_unique
+<
+BoŞ—nPŞicy
+>(
+Çme
+, 
+´oduùName
+));
+
+59 
+	}
+}
+
+61 
+	gPŞicyW©ch”
+::
+AddUniÚPŞicy
+(cÚ¡ 
+¡d
+::
+¡ršg
+ 
+Çme
+, cÚ¡ std::
+veùÜ
+<¡d::¡ršg> &
+ty³s
+)
+
+63 
+pŞic›s
+.
+push_back
+(
+¡d
+::
+make_unique
+<
+UniÚPŞicy
+>(
+Çme
+, 
+´oduùName
+, 
+ty³s
+));
+
+66 
+	gPŞicyW©ch”
+::
+	$OnExecu‹
+(
+N­i
+::
+Env
+ 
+’v
+)
+
+68 
+AsyncProg»ssQueueWÜk”
+::
+	`OnExecu‹
+(
+’v
+);
+
+69 
+	}
+}
+
+71 
+	gPŞicyW©ch”
+::
+	$Execu‹
+(cÚ¡ 
+ExecutiÚProg»ss
+ &
+´og»ss
+)
+
+73 
+¡d
+::
+veùÜ
+<cÚ¡ 
+PŞicy
+ *> 
+upd©edPŞic›s
+;
+
+74 
+boŞ
+ 
+fœ¡
+ = 
+Œue
+;
+
+77 
+CFSŒšgRef
+ 
+·th
+ = 
+	`CFSTR
+("/Library/Managed Preferences/");
+
+78 
+£m
+ = 
+	`di¥©ch_£m­hÜe_ü—‹
+(0);
+
+79 
+FSEv’tSŒ—mCÚ‹xt
+ 
+cÚ‹xt
+ = {0, &
+£m
+, 
+NULL
+, NULL, NULL};
+
+80 
+¡»am
+ = 
+	`FSEv’tSŒ—mC»©e
+(
+NULL
+,
+
+81 &
+f£v’ts_ÿÎback
+,
+
+82 &
+cÚ‹xt
+,
+
+83 
+	`CFA¼ayC»©e
+(
+NULL
+, (cÚ¡ **)&
+·th
+, 1, NULL),
+
+84 
+kFSEv’tSŒ—mEv’tIdSšûNow
+,
+
+86 
+kCFSŒ—mEv’tNÚe
+);
+
+88 
+di¥©ch_queue_t
+ 
+queue
+ = 
+	`di¥©ch_g‘_glob®_queue
+(
+DISPATCH_QUEUE_PRIORITY_DEFAULT
+, 0);
+
+89 
+	`FSEv’tSŒ—mS‘Di¥©chQueue
+(
+¡»am
+, 
+queue
+);
+
+90 
+	`FSEv’tSŒ—mS¹
+(
+¡»am
+);
+
+92 !
+di¥o£d
+)
+
+94 
+upd©edPŞic›s
+.
+	`ş—r
+();
+
+95 
+boŞ
+ 
+upd©e
+ = 
+çl£
+;
+
+96 autØ&
+pŞicy
+ : 
+pŞic›s
+)
+
+98 
+pŞicy
+->
+	`»äesh
+())
+
+100 
+PŞicyReäeshResuÉ
+::
+Upd©ed
+:
+
+101 
+PŞicyReäeshResuÉ
+::
+Removed
+:
+
+102 
+upd©edPŞic›s
+.
+	`push_back
+(
+pŞicy
+.
+	`g‘
+());
+
+103 
+upd©e
+ = 
+Œue
+;
+
+105 
+PŞicyReäeshResuÉ
+::
+Unchªged
+:
+
+106 
+upd©edPŞic›s
+.
+	`push_back
+(
+pŞicy
+.
+	`g‘
+());
+
+111 ià(
+fœ¡
+ || 
+upd©e
+)
+
+112 
+´og»ss
+.
+	`S’d
+(&
+upd©edPŞic›s
+[0], upd©edPŞic›s.
+	`size
+());
+
+114 
+fœ¡
+ = 
+çl£
+;
+
+115 
+	`di¥©ch_£m­hÜe_wa™
+(
+£m
+, 
+DISPATCH_TIME_FOREVER
+);
+
+117 
+	}
+}
+
+119 
+	gPŞicyW©ch”
+::
+	$OnProg»ss
+(cÚ¡ 
+PŞicy
+ *cÚ¡ *
+pŞic›s
+, 
+size_t
+ 
+couÁ
+)
+
+121 
+HªdËScİe
+ 
+	`scİe
+(
+	`Env
+());
+
+122 autØ
+»suÉ
+ = 
+Objeù
+::
+	`New
+(
+	`Env
+());
+
+124 ià(
+couÁ
+ == 0)
+
+126 
+	`C®lback
+().
+	`C®l
+(
+	`Reûiv”
+().
+	`V®ue
+(), {
+»suÉ
+});
+
+130 
+size_t
+ 
+i
+ = 0; i < 
+couÁ
+; i++)
+
+131 
+»suÉ
+.
+	`S‘
+(
+pŞic›s
+[
+i
+]->
+Çme
+,…Şic›s[i]->
+	`g‘V®ue
+(
+	`Env
+()));
+
+133 
+	`C®lback
+().
+	`C®l
+(
+	`Reûiv”
+().
+	`V®ue
+(), {
+»suÉ
+});
+
+134 
+	}
+}
+
+136 
+	gPŞicyW©ch”
+::
+	$OnOK
+(è{
+	}
+}
+
+138 
+PŞicyW©ch”
+::
+	$Di¥o£
+()
+
+140 
+di¥o£d
+ = 
+Œue
+;
+
+141 ià(
+£m
+) {
+
+142 
+	`di¥©ch_£m­hÜe_sigÇl
+(
+£m
+);
+
+144 
+	}
+}
+
+	@src/macos/PreferencesPolicy.hh
+
+6 #iâdeà
+PREFERENCES_POLICY_H
+
+
+7 
+	#PREFERENCES_POLICY_H
+
+
+	)
+
+9 
+	~<Çpi.h
+>
+
+10 
+	~<CÜeFound©iÚ/CÜeFound©iÚ.h
+>
+
+11 
+	~"../PŞicy.hh
+"
+
+13 
+usšg
+ 
+Çme¥aû
+ 
+	gN­i
+;
+
+15 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gT
+>
+
+16 şas 
+	cP»ã»nûsPŞicy
+ : 
+public
+ 
+PŞicy
+
+
+18 
+public
+:
+
+19 
+	$P»ã»nûsPŞicy
+(cÚ¡ 
+¡d
+::
+¡ršg
+ 
+Çme
+, cÚ¡ std::¡ršg &
+´oduùName
+)
+
+20 : 
+	`PŞicy
+(
+Çme
+),
+
+21 
+	`­pID
+(
+	`CFSŒšgC»©eW™hCSŒšg
+(
+NULL
+, 
+´oduùName
+.
+	`c_¡r
+(), 
+kCFSŒšgEncodšgUTF8
+)),
+
+22 
+	`key
+(
+	`CFSŒšgC»©eW™hCSŒšg
+(
+NULL
+, 
+Çme
+.
+	`c_¡r
+(), 
+kCFSŒšgEncodšgUTF8
+))
+
+26 ~
+	$P»ã»nûsPŞicy
+()
+
+28 
+	`CFR–—£
+(
+­pID
+);
+
+29 
+	`CFR–—£
+(
+key
+);
+
+30 
+	}
+}
+
+32 
+PŞicyReäeshResuÉ
+ 
+	$»äesh
+()
+
+34 autØ
+ÃwV®ue
+ = 
+	`»ad
+();
+
+37 ià(!
+ÃwV®ue
+.
+	`has_v®ue
+())
+
+39 ià(!
+v®ue
+.
+	`has_v®ue
+())
+
+40  
+PŞicyReäeshResuÉ
+::
+NÙS‘
+;
+
+42 
+v®ue
+.
+	`»£t
+();
+
+43  
+PŞicyReäeshResuÉ
+::
+Removed
+;
+
+47 ià(
+v®ue
+ !ğ
+ÃwV®ue
+)
+
+49 
+v®ue
+ = 
+ÃwV®ue
+;
+
+50  
+PŞicyReäeshResuÉ
+::
+Upd©ed
+;
+
+53  
+PŞicyReäeshResuÉ
+::
+Unchªged
+;
+
+54 
+	}
+}
+
+56 
+V®ue
+ 
+	$g‘V®ue
+(
+Env
+ 
+’v
+) const
+
+58 ià(!
+v®ue
+.
+	`has_v®ue
+())
+
+59  
+’v
+.
+	`Undefšed
+();
+
+60  
+	`g‘JSV®ue
+(
+’v
+, *
+v®ue
+);
+
+61 
+	}
+}
+
+63 
+	g´Ùeùed
+:
+
+64 
+¡d
+::
+İtiÚ®
+<
+T
+> 
+v®ue
+;
+
+65 cÚ¡ 
+CFSŒšgRef
+ 
+	g­pID
+;
+
+66 cÚ¡ 
+CFSŒšgRef
+ 
+	gkey
+;
+
+67 
+vœtu®
+ 
+V®ue
+ 
+	$g‘JSV®ue
+(
+Env
+ 
+’v
+, 
+T
+ 
+v®ue
+) const = 0;
+
+68 
+vœtu®
+ 
+¡d
+::
+İtiÚ®
+<
+T
+> 
+	$»ad
+() const = 0;
+
+70 
+´iv©e
+:
+
+71 
+	}
+};
+
+	@src/macos/StringPolicy.cc
+
+6 
+	~"SŒšgPŞicy.hh
+"
+
+8 
+usšg
+ 
+Çme¥aû
+ 
+	gN­i
+;
+
+10 
+	gSŒšgPŞicy
+::
+	$SŒšgPŞicy
+(cÚ¡ 
+¡d
+::
+¡ršg
+ 
+Çme
+, cÚ¡ std::¡ršg &
+´oduùName
+)
+
+11 : 
+	$P»ã»nûsPŞicy
+(
+Çme
+, 
+´oduùName
+)
+
+13 
+	}
+}
+
+15 
+V®ue
+ 
+	gSŒšgPŞicy
+::
+	$g‘JSV®ue
+(
+Env
+ 
+’v
+, 
+¡d
+::
+¡ršg
+ 
+v®ue
+) const
+
+17  
+SŒšg
+::
+	`New
+(
+’v
+, 
+v®ue
+);
+
+18 
+	}
+}
+
+20 
+	g¡d
+::
+İtiÚ®
+<
+¡d
+::
+¡ršg
+> 
+SŒšgPŞicy
+::
+	$»ad
+() const
+
+22 autØ
+´ef
+ = 
+	`CFP»ã»nûsCİyAµV®ue
+(
+key
+, 
+­pID
+);
+
+24 ià(
+´ef
+ =ğ
+NULL
+)
+
+25  
+¡d
+::
+nuÎİt
+;
+
+27 ià(
+	`CFG‘Ty³ID
+(
+´ef
+è!ğ
+	`CFSŒšgG‘Ty³ID
+())
+
+29 
+	`CFR–—£
+(
+´ef
+);
+
+30  
+¡d
+::
+nuÎİt
+;
+
+33 
+CFIndex
+ 
+Ëngth
+ = 
+	`CFSŒšgG‘L’gth
+((
+CFSŒšgRef
+)
+´ef
+);
+
+34 
+CFIndex
+ 
+maxSize
+ = 
+	`CFSŒšgG‘MaximumSizeFÜEncodšg
+(
+Ëngth
+, 
+kCFSŒšgEncodšgUTF8
+) + 1;
+
+35 
+¡d
+::
+veùÜ
+<> 
+	`bufãr
+(
+maxSize
+);
+
+37 ià(
+	`CFSŒšgG‘CSŒšg
+((
+CFSŒšgRef
+)
+´ef
+, 
+bufãr
+.
+	`d©a
+(), 
+maxSize
+, 
+kCFSŒšgEncodšgUTF8
+))
+
+39 
+¡d
+::
+¡ršg
+ 
+	`»suÉ
+(
+bufãr
+.
+	`d©a
+());
+
+40 
+	`CFR–—£
+(
+´ef
+);
+
+41  
+»suÉ
+;
+
+44 
+	`CFR–—£
+(
+´ef
+);
+
+45  
+¡d
+::
+nuÎİt
+;
+
+46 
+	}
+}
+
+	@src/macos/StringPolicy.hh
+
+6 #iâdeà
+STRING_POLICY_H
+
+
+7 
+	#STRING_POLICY_H
+
+
+	)
+
+9 
+	~<Çpi.h
+>
+
+10 
+	~"P»ã»nûsPŞicy.hh
+"
+
+12 
+usšg
+ 
+Çme¥aû
+ 
+	gN­i
+;
+
+14 
+şass
+ 
+	gSŒšgPŞicy
+ : 
+public
+ 
+P»ã»nûsPŞicy
+<
+¡d
+::
+¡ršg
+>
+
+16 
+public
+:
+
+17 
+SŒšgPŞicy
+(cÚ¡ 
+¡d
+::
+¡ršg
+ 
+Çme
+, cÚ¡ std::¡ršg &
+´oduùName
+);
+
+18 
+	g´Ùeùed
+:
+
+19 
+V®ue
+ 
+g‘JSV®ue
+(
+Env
+ 
+’v
+, 
+¡d
+::
+¡ršg
+ 
+v®ue
+ècÚ¡ 
+ov”ride
+;
+
+20 
+	g¡d
+::
+İtiÚ®
+<
+¡d
+::
+¡ršg
+> 
+»ad
+(ècÚ¡ 
+ov”ride
+;
+
+	@src/macos/UnionPolicy.cc
+
+6 
+	~"UniÚPŞicy.hh
+"
+
+7 
+	~<CÜeFound©iÚ/CÜeFound©iÚ.h
+>
+
+9 
+	gUniÚPŞicy
+::
+UniÚPŞicy
+(cÚ¡ 
+¡d
+::
+¡ršg
+ 
+Çme
+, cÚ¡ std::¡ršg &
+´oduùName
+, cÚ¡ std::
+veùÜ
+<¡d::¡ršg> &
+ty³s
+)
+
+10 : 
+PŞicy
+(
+Çme
+),
+
+11 
+­pID
+(
+CFSŒšgC»©eW™hCSŒšg
+(
+nuÎ±r
+, 
+´oduùName
+.
+c_¡r
+(), 
+kCFSŒšgEncodšgUTF8
+)),
+
+12 
+key
+(
+CFSŒšgC»©eW™hCSŒšg
+(
+nuÎ±r
+, 
+Çme
+.
+c_¡r
+(), 
+kCFSŒšgEncodšgUTF8
+))
+
+14 cÚ¡‡utØ&
+	gty³
+ : 
+ty³s
+) {
+
+15 
+acû±sBoŞ—n
+ =‡cû±sBoŞ—À|| 
+ty³
+ == "boolean";
+
+16 
+	gacû±sNumb”
+ = 
+acû±sNumb”
+ || 
+ty³
+ == "number";
+
+17 
+	gacû±sSŒšg
+ = 
+acû±sSŒšg
+ || 
+ty³
+ == "string";
+
+21 
+	gUniÚPŞicy
+::~
+	$UniÚPŞicy
+()
+
+23 
+	`CFR–—£
+(
+­pID
+);
+
+24 
+	`CFR–—£
+(
+key
+);
+
+25 
+	}
+}
+
+27 
+PŞicyReäeshResuÉ
+ 
+	gUniÚPŞicy
+::
+	$»äesh
+()
+
+29 autØ
+Ãxt
+ = 
+	`»ad
+();
+
+30 ià(
+v®ue
+ =ğ
+Ãxt
+)
+
+31  
+v®ue
+.
+	`has_v®ue
+(è? 
+PŞicyReäeshResuÉ
+::
+Unchªged
+ : PŞicyReäeshResuÉ::
+NÙS‘
+;
+
+32 autØ
+»moved
+ = 
+v®ue
+.
+	`has_v®ue
+(è&& !
+Ãxt
+.has_value();
+
+33 
+v®ue
+ = 
+Ãxt
+;
+
+34  
+»moved
+ ? 
+PŞicyReäeshResuÉ
+::
+Removed
+ : PŞicyReäeshResuÉ::
+Upd©ed
+;
+
+35 
+	}
+}
+
+37 
+	gN­i
+::
+V®ue
+ 
+UniÚPŞicy
+::
+	$g‘V®ue
+(
+N­i
+::
+Env
+ 
+’v
+) const
+
+39 ià(!
+v®ue
+.
+	`has_v®ue
+())
+
+40  
+’v
+.
+	`Undefšed
+();
+
+41 ià(
+¡d
+::
+hŞds_®‹º©ive
+<
+boŞ
+>(*
+v®ue
+))
+
+42  
+N­i
+::
+BoŞ—n
+::
+	`New
+(
+’v
+, 
+¡d
+::
+g‘
+<
+boŞ
+>(*
+v®ue
+));
+
+43 ià(
+¡d
+::
+hŞds_®‹º©ive
+<>(*
+v®ue
+))
+
+44  
+N­i
+::
+Numb”
+::
+	`New
+(
+’v
+, 
+¡d
+::
+g‘
+<>(*
+v®ue
+));
+
+45  
+N­i
+::
+SŒšg
+::
+	`New
+(
+’v
+, 
+¡d
+::
+g‘
+<¡d::
+¡ršg
+>(*
+v®ue
+));
+
+46 
+	}
+}
+
+48 
+	g¡d
+::
+İtiÚ®
+<
+UniÚPŞicyV®ue
+> 
+UniÚPŞicy
+::
+	$»ad
+() const
+
+50 ià(!
+	`CFP»ã»nûsAµV®ueIsFÜûd
+(
+key
+, 
+­pID
+))
+
+51  
+¡d
+::
+nuÎİt
+;
+
+52 autØ
+´ef
+ = 
+	`CFP»ã»nûsCİyAµV®ue
+(
+key
+, 
+­pID
+);
+
+53 ià(
+´ef
+ =ğ
+nuÎ±r
+)
+
+54  
+¡d
+::
+nuÎİt
+;
+
+56 
+¡d
+::
+İtiÚ®
+<
+UniÚPŞicyV®ue
+> 
+»suÉ
+;
+
+57 autØ
+ty³
+ = 
+	`CFG‘Ty³ID
+(
+´ef
+);
+
+58 ià(
+ty³
+ =ğ
+	`CFBoŞ—nG‘Ty³ID
+(è&& 
+acû±sBoŞ—n
+) {
+
+59 
+»suÉ
+ = 
+´ef
+ =ğ
+kCFBoŞ—nTrue
+;
+
+60 } ià(
+ty³
+ =ğ
+	`CFNumb”G‘Ty³ID
+(è&& 
+acû±sNumb”
+) {
+
+61 
+numb”
+;
+
+62 ià(
+	`CFNumb”G‘V®ue
+(
+¡©ic_ÿ¡
+<
+CFNumb”Ref
+>(
+´ef
+), 
+kCFNumb”LÚgLÚgTy³
+, &
+numb”
+))
+
+63 
+»suÉ
+ = 
+¡©ic_ÿ¡
+<>(
+numb”
+);
+
+64 } ià(
+ty³
+ =ğ
+	`CFSŒšgG‘Ty³ID
+(è&& 
+acû±sSŒšg
+) {
+
+65 
+CFIndex
+ 
+Ëngth
+ = 
+	`CFSŒšgG‘L’gth
+(
+¡©ic_ÿ¡
+<
+CFSŒšgRef
+>(
+´ef
+));
+
+66 
+CFIndex
+ 
+maxSize
+ = 
+	`CFSŒšgG‘MaximumSizeFÜEncodšg
+(
+Ëngth
+, 
+kCFSŒšgEncodšgUTF8
+) + 1;
+
+67 
+¡d
+::
+veùÜ
+<> 
+	`bufãr
+(
+maxSize
+);
+
+68 ià(
+	`CFSŒšgG‘CSŒšg
+(
+¡©ic_ÿ¡
+<
+CFSŒšgRef
+>(
+´ef
+), 
+bufãr
+.
+	`d©a
+(), 
+maxSize
+, 
+kCFSŒšgEncodšgUTF8
+))
+
+69 
+»suÉ
+ = 
+¡d
+::
+	`¡ršg
+(
+bufãr
+.
+	`d©a
+());
+
+71 
+	`CFR–—£
+(
+´ef
+);
+
+72  
+»suÉ
+;
+
+73 
+	}
+}
+
+	@src/macos/UnionPolicy.hh
+
+6 #iâdeà
+UNION_POLICY_H
+
+
+7 
+	#UNION_POLICY_H
+
+
+	)
+
+9 
+	~<İtiÚ®
+>
+
+10 
+	~<¡ršg
+>
+
+11 
+	~<v¬ŸÁ
+>
+
+12 
+	~<veùÜ
+>
+
+13 
+	~<CÜeFound©iÚ/CÜeFound©iÚ.h
+>
+
+14 
+	~"../PŞicy.hh
+"
+
+16 
+usšg
+ 
+	gUniÚPŞicyV®ue
+ = 
+¡d
+::
+v¬ŸÁ
+<
+boŞ
+, , 
+	g¡d
+::
+¡ršg
+>;
+
+18 şas 
+	cUniÚPŞicy
+ : 
+public
+ 
+PŞicy
+
+
+20 
+public
+:
+
+21 
+UniÚPŞicy
+(cÚ¡ 
+¡d
+::
+¡ršg
+ 
+Çme
+, cÚ¡ std::¡ršg &
+´oduùName
+, cÚ¡ std::
+veùÜ
+<¡d::¡ršg> &
+ty³s
+);
+
+22 ~
+UniÚPŞicy
+();
+
+23 
+PŞicyReäeshResuÉ
+ 
+»äesh
+();
+
+24 
+	mN­i
+::
+V®ue
+ 
+	$g‘V®ue
+(
+N­i
+::
+Env
+ 
+’v
+) const;
+
+26 
+´iv©e
+:
+
+27 
+¡d
+::
+İtiÚ®
+<
+UniÚPŞicyV®ue
+> 
+	$»ad
+() const;
+
+28 
+CFSŒšgRef
+ 
+­pID
+;
+
+29 
+CFSŒšgRef
+ 
+key
+;
+
+30 
+boŞ
+ 
+acû±sBoŞ—n
+ = 
+çl£
+;
+
+31 
+boŞ
+ 
+acû±sNumb”
+ = 
+çl£
+;
+
+32 
+boŞ
+ 
+acû±sSŒšg
+ = 
+çl£
+;
+
+33 
+¡d
+::
+İtiÚ®
+<
+UniÚPŞicyV®ue
+> 
+v®ue
+;
+
+	@src/main.cc
+
+6 
+	~<Çpi.h
+>
+
+7 
+	~<®gÜ™hm
+>
+
+8 
+	~<veùÜ
+>
+
+10 
+	~"PŞicy.hh
+"
+
+11 
+	~"PŞicyW©ch”.hh
+"
+
+13 
+usšg
+ 
+Çme¥aû
+ 
+	gN­i
+;
+
+15 
+V®ue
+ 
+	$Di¥o£W©ch”
+(cÚ¡ 
+C®lbackInfo
+ &
+šfo
+)
+
+17 autØ
+w©ch”
+ = (
+PŞicyW©ch”
+ *)
+šfo
+.
+	`D©a
+();
+
+18 
+w©ch”
+->
+	`Di¥o£
+();
+
+19  
+šfo
+.
+	`Env
+().
+	`NuÎ
+();
+
+20 
+	}
+}
+
+22 
+V®ue
+ 
+	$C»©eW©ch”
+(cÚ¡ 
+C®lbackInfo
+ &
+šfo
+)
+
+24 autØ
+’v
+ = 
+šfo
+.
+	`Env
+();
+
+26 #ià!
+	`defšed
+(
+WINDOWS
+è&& !defšed(
+MACOS
+è&& !defšed(
+AIX
+)
+
+27 
+throw
+ 
+Ty³E¼Ü
+::
+	`New
+(
+’v
+, "Unsupported…latform");
+
+30 ià(
+šfo
+.
+	`L’gth
+() < 3)
+
+31 
+throw
+ 
+Ty³E¼Ü
+::
+	`New
+(
+’v
+, "Expected 3‡rguments");
+
+32 ià(!
+šfo
+[0].
+	`IsSŒšg
+())
+
+33 
+throw
+ 
+Ty³E¼Ü
+::
+	`New
+(
+’v
+, "Expected first‡rgo be string");
+
+34 ià(!
+šfo
+[1].
+	`IsObjeù
+())
+
+35 
+throw
+ 
+Ty³E¼Ü
+::
+	`New
+(
+’v
+, "Expected second‡rgo be object");
+
+36 ià(!
+šfo
+[2].
+	`IsFunùiÚ
+())
+
+37 
+throw
+ 
+Ty³E¼Ü
+::
+	`New
+(
+’v
+, "Expectedhird‡rgo be function");
+
+39 
+¡d
+::
+¡ršg
+ 
+»gi¡ryP©h
+;
+
+41 ià(
+šfo
+.
+	`L’gth
+(è> 3 && !šfo[3].
+	`IsUndefšed
+())
+
+43 ià(!
+šfo
+[3].
+	`IsObjeù
+())
+
+44 
+throw
+ 
+Ty³E¼Ü
+::
+	`New
+(
+’v
+, "Expected fourth‡rgo be object");
+
+46 autØ
+¿wO±iÚs
+ = 
+šfo
+[3].
+As
+<
+Objeù
+>();
+
+47 autØ
+¿wRegi¡ryP©h
+ = 
+¿wO±iÚs
+.
+	`G‘
+("registryPath");
+
+49 ià(!
+¿wRegi¡ryP©h
+.
+	`IsUndefšed
+())
+
+51 ià(!
+¿wRegi¡ryP©h
+.
+	`IsSŒšg
+())
+
+52 
+throw
+ 
+Ty³E¼Ü
+::
+	`New
+(
+’v
+, "Expected options.registryPatho be string");
+
+54 
+»gi¡ryP©h
+ = 
+¿wRegi¡ryP©h
+.
+As
+<
+SŒšg
+>();
+
+58 autØ
+¿wPŞic›s
+ = 
+šfo
+[1].
+As
+<
+Objeù
+>();
+
+59 autØ
+w©ch”
+ = 
+Ãw
+ 
+	`PŞicyW©ch”
+(
+šfo
+[0].
+As
+<
+SŒšg
+>(), info[2].As<
+FunùiÚ
+>(), 
+»gi¡ryP©h
+);
+
+61 autØcÚ¡ &
+™em
+ : 
+¿wPŞic›s
+)
+
+63 autØ
+¿wPŞicyName
+ = 
+™em
+.
+fœ¡
+.
+As
+<
+SŒšg
+>();
+
+64 autØ
+¿wPŞicyV®ue
+ = 
+¡©ic_ÿ¡
+<
+V®ue
+>(
+™em
+.
+£cÚd
+);
+
+66 ià(!
+¿wPŞicyV®ue
+.
+	`IsObjeù
+())
+
+67 
+throw
+ 
+Ty³E¼Ü
+::
+	`New
+(
+’v
+, "Expected…olicyo be object");
+
+69 autØ
+¿wPŞicy
+ = 
+¿wPŞicyV®ue
+.
+As
+<
+Objeù
+>();
+
+70 autØ
+¿wPŞicyTy³
+ = 
+¿wPŞicy
+.
+	`G‘
+("type");
+
+71 
+¡d
+::
+veùÜ
+<¡d::
+¡ršg
+> 
+pŞicyTy³s
+;
+
+72 ià(
+¿wPŞicyTy³
+.
+	`IsSŒšg
+()) {
+
+73 
+pŞicyTy³s
+.
+	`push_back
+(
+¡d
+::
+	`¡ršg
+(
+¿wPŞicyTy³
+.
+As
+<
+SŒšg
+>()));
+
+74 } ià(
+¿wPŞicyTy³
+.
+	`IsA¼ay
+()) {
+
+75 autØ
+¿wPŞicyTy³s
+ = 
+¿wPŞicyTy³
+.
+As
+<
+A¼ay
+>();
+
+76 ià(
+¿wPŞicyTy³s
+.
+	`L’gth
+() == 0)
+
+77 
+throw
+ 
+Ty³E¼Ü
+::
+	`New
+(
+’v
+, "Expected…olicyype‡rrayo be‚on-empty");
+
+78 
+ušt32_t
+ 
+i
+ = 0; i < 
+¿wPŞicyTy³s
+.
+	`L’gth
+(); i++) {
+
+79 autØ
+¿wTy³
+ = 
+¿wPŞicyTy³s
+.
+	`G‘
+(
+i
+);
+
+80 ià(!
+¿wTy³
+.
+	`IsSŒšg
+())
+
+81 
+throw
+ 
+Ty³E¼Ü
+::
+	`New
+(
+’v
+, "Expected…olicyype‡rrayƒntrieso be strings");
+
+82 autØ
+ty³
+ = 
+¡d
+::
+	`¡ršg
+(
+¿wTy³
+.
+As
+<
+SŒšg
+>());
+
+83 ià(
+¡d
+::
+	`fšd
+(
+pŞicyTy³s
+.
+	`begš
+(),…ŞicyTy³s.
+	`’d
+(), 
+ty³
+) ==…olicyTypes.end())
+
+84 
+pŞicyTy³s
+.
+	`push_back
+(
+ty³
+);
+
+87 
+throw
+ 
+Ty³E¼Ü
+::
+	`New
+(
+’v
+, "Expected…olicyypeo be‡ string or‚on-empty string‡rray");
+
+90 cÚ¡‡utØ&
+pŞicyTy³
+ : 
+pŞicyTy³s
+) {
+
+91 ià(
+pŞicyTy³
+ != "string" &&…olicyType != "number" &&…olicyType != "boolean")
+
+92 
+throw
+ 
+Ty³E¼Ü
+::
+	`New
+(
+’v
+, "UnknowÀpŞicyy³ '" + 
+pŞicyTy³
+ + "'");
+
+95 ià(
+pŞicyTy³s
+.
+	`size
+() > 1) {
+
+96 
+w©ch”
+->
+	`AddUniÚPŞicy
+(
+¿wPŞicyName
+.
+As
+<
+SŒšg
+>(), 
+pŞicyTy³s
+);
+
+97 } ià(
+pŞicyTy³s
+[0] == "string") {
+
+98 
+w©ch”
+->
+	`AddSŒšgPŞicy
+(
+¿wPŞicyName
+.
+As
+<
+SŒšg
+>());
+
+99 } ià(
+pŞicyTy³s
+[0] == "number") {
+
+100 
+w©ch”
+->
+	`AddNumb”PŞicy
+(
+¿wPŞicyName
+.
+As
+<
+SŒšg
+>());
+
+102 
+w©ch”
+->
+	`AddBoŞ—nPŞicy
+(
+¿wPŞicyName
+.
+As
+<
+SŒšg
+>());
+
+106 
+w©ch”
+->
+	`Queue
+();
+
+108 autØ
+»suÉ
+ = 
+Objeù
+::
+	`New
+(
+’v
+);
+
+109 
+»suÉ
+.
+	`S‘
+(
+SŒšg
+::
+	`New
+(
+’v
+, "di¥o£"), 
+FunùiÚ
+::NewÓnv, 
+Di¥o£W©ch”
+, "di¥o£W©ch”", 
+w©ch”
+));
+
+111  
+»suÉ
+;
+
+112 
+	}
+}
+
+114 
+Objeù
+ 
+	$In™
+(
+Env
+ 
+’v
+, 
+Objeù
+ 
+expÜts
+)
+
+116  
+FunùiÚ
+::
+	`New
+(
+’v
+, 
+C»©eW©ch”
+, "createWatcher");
+
+117 
+	}
+}
+
+119 
+NODE_API_MODULE
+(
+vscod•Şicy
+, 
+In™
+)
+
+	@src/windows/BooleanPolicy.cc
+
+6 
+	~"BoŞ—nPŞicy.hh
+"
+
+7 
+	~<io¡»am
+>
+
+9 
+usšg
+ 
+Çme¥aû
+ 
+	gN­i
+;
+
+11 
+	gBoŞ—nPŞicy
+::
+	$BoŞ—nPŞicy
+(cÚ¡ 
+¡d
+::
+¡ršg
+& 
+Çme
+, cÚ¡ std::¡ršg& 
+´oduùName
+, cÚ¡ std::¡ršg &
+»gi¡ryP©h
+)
+
+12 : 
+	`Regi¡ryPŞicy
+(
+Çme
+, 
+´oduùName
+, {
+REG_DWORD
+},„egi¡ryP©hè{}
+
+14 
+boŞ
+ 
+	gBoŞ—nPŞicy
+::
+	$·r£Regi¡ryV®ue
+(
+LPBYTE
+ 
+bufãr
+, 
+DWORD
+ 
+bufãrSize
+, DWORD 
+ty³
+) const
+
+16 ià(
+ty³
+ !ğ
+REG_DWORD
+ || 
+bufãrSize
+ !ğ(
+DWORD
+))
+
+18  
+çl£
+;
+
+21 
+DWORD
+ 
+v®ue
+ = *
+»š‹½»t_ÿ¡
+<DWORD*>(
+bufãr
+);
+
+22  (
+v®ue
+ != 0);
+
+23 
+	}
+}
+
+25 
+V®ue
+ 
+	gBoŞ—nPŞicy
+::
+	$g‘JSV®ue
+(
+Env
+ 
+’v
+, 
+boŞ
+ 
+v®ue
+) const
+
+27  
+BoŞ—n
+::
+	`New
+(
+’v
+, 
+v®ue
+);
+
+28 
+	}
+}
+
+	@src/windows/BooleanPolicy.hh
+
+6 #iâdeà
+BOOLEAN_POLICY_H
+
+
+7 
+	#BOOLEAN_POLICY_H
+
+
+	)
+
+9 
+	~<Çpi.h
+>
+
+10 
+	~<wšdows.h
+>
+
+11 
+	~"Regi¡ryPŞicy.hh
+"
+
+13 
+usšg
+ 
+Çme¥aû
+ 
+	gN­i
+;
+
+15 
+şass
+ 
+	gBoŞ—nPŞicy
+ : 
+public
+ 
+Regi¡ryPŞicy
+<
+boŞ
+>
+
+17 
+public
+:
+
+18 
+BoŞ—nPŞicy
+(cÚ¡ 
+¡d
+::
+¡ršg
+& 
+Çme
+, cÚ¡ std::¡ršg &
+´oduùName
+, cÚ¡ std::¡ršg &
+»gi¡ryP©h
+ = "");
+
+20 
+	g´Ùeùed
+:
+
+21 
+boŞ
+ 
+·r£Regi¡ryV®ue
+(
+LPBYTE
+ 
+bufãr
+, 
+DWORD
+ 
+bufãrSize
+, DWORD 
+ty³
+) const;
+
+22 
+V®ue
+ 
+g‘JSV®ue
+(
+Env
+ 
+’v
+, 
+boŞ
+ 
+v®ue
+) const;
+
+	@src/windows/NumberPolicy.cc
+
+6 
+	~"Numb”PŞicy.hh
+"
+
+8 
+usšg
+ 
+Çme¥aû
+ 
+	gN­i
+;
+
+10 
+	gNumb”PŞicy
+::
+	$Numb”PŞicy
+(cÚ¡ 
+¡d
+::
+¡ršg
+ 
+Çme
+, cÚ¡ std::¡ršg &
+´oduùName
+, cÚ¡ std::¡ršg &
+»gi¡ryP©h
+)
+
+11 : 
+	`Regi¡ryPŞicy
+(
+Çme
+, 
+´oduùName
+, {
+REG_QWORD
+},„egi¡ryP©hè{}
+
+13 
+	gNumb”PŞicy
+::
+	$·r£Regi¡ryV®ue
+(
+LPBYTE
+ 
+bufãr
+, 
+DWORD
+ 
+bufãrSize
+, DWORD 
+ty³
+) const
+
+15  *
+»š‹½»t_ÿ¡
+<*>(
+bufãr
+);
+
+16 
+	}
+}
+
+18 
+V®ue
+ 
+	gNumb”PŞicy
+::
+	$g‘JSV®ue
+(
+Env
+ 
+’v
+, 
+v®ue
+) const
+
+20  
+Numb”
+::
+	`New
+(
+’v
+, 
+¡©ic_ÿ¡
+<>(
+v®ue
+));
+
+21 
+	}
+}
+
+	@src/windows/NumberPolicy.hh
+
+6 #iâdeà
+NUMBER_POLICY_H
+
+
+7 
+	#NUMBER_POLICY_H
+
+
+	)
+
+9 
+	~<Çpi.h
+>
+
+10 
+	~<wšdows.h
+>
+
+11 
+	~"Regi¡ryPŞicy.hh
+"
+
+13 
+usšg
+ 
+Çme¥aû
+ 
+	gN­i
+;
+
+15 
+şass
+ 
+	gNumb”PŞicy
+ : 
+public
+ 
+Regi¡ryPŞicy
+<>
+
+17 
+public
+:
+
+18 
+Numb”PŞicy
+(cÚ¡ 
+¡d
+::
+¡ršg
+ 
+Çme
+, cÚ¡ std::¡ršg &
+´oduùName
+, cÚ¡ std::¡ršg &
+»gi¡ryP©h
+ = "");
+
+20 
+	g´Ùeùed
+:
+
+21 
+·r£Regi¡ryV®ue
+(
+LPBYTE
+ 
+bufãr
+, 
+DWORD
+ 
+bufãrSize
+, DWORD 
+ty³
+) const;
+
+22 
+V®ue
+ 
+g‘JSV®ue
+(
+Env
+ 
+’v
+, 
+v®ue
+) const;
+
+	@src/windows/PolicyWatcher.cc
+
+6 
+	~<u£»nv.h
+>
+
+8 
+	~"../PŞicyW©ch”.hh
+"
+
+9 
+	~"SŒšgPŞicy.hh
+"
+
+10 
+	~"Numb”PŞicy.hh
+"
+
+11 
+	~"BoŞ—nPŞicy.hh
+"
+
+12 
+	~"UniÚPŞicy.hh
+"
+
+14 
+usšg
+ 
+Çme¥aû
+ 
+	gN­i
+;
+
+16 
+	gPŞicyW©ch”
+::
+	$PŞicyW©ch”
+(
+¡d
+::
+¡ršg
+ 
+´oduùName
+, cÚ¡ 
+FunùiÚ
+ &
+okC®lback
+)
+
+17 : 
+	`AsyncProg»ssQueueWÜk”
+(
+okC®lback
+),
+
+18 
+	$´oduùName
+(
+´oduùName
+)
+
+20 
+	}
+}
+
+22 
+	gPŞicyW©ch”
+::~
+	$PŞicyW©ch”
+()
+
+24 
+	`UÄegi¡”GPNÙifiÿtiÚ
+(
+hªdËs
+[2]);
+
+25 
+	`UÄegi¡”GPNÙifiÿtiÚ
+(
+hªdËs
+[3]);
+
+26 
+	`Clo£HªdË
+(
+hªdËs
+[0]);
+
+27 
+	`Clo£HªdË
+(
+hªdËs
+[1]);
+
+28 
+	`Clo£HªdË
+(
+hªdËs
+[2]);
+
+29 
+	`Clo£HªdË
+(
+hªdËs
+[3]);
+
+30 
+	}
+}
+
+32 
+	gPŞicyW©ch”
+::
+	$AddSŒšgPŞicy
+(cÚ¡ 
+¡d
+::
+¡ršg
+ 
+Çme
+)
+
+34 
+pŞic›s
+.
+	`push_back
+(
+¡d
+::
+make_unique
+<
+SŒšgPŞicy
+>(
+Çme
+, 
+´oduùName
+, 
+»gi¡ryP©h
+));
+
+35 
+	}
+}
+
+37 
+	gPŞicyW©ch”
+::
+	$AddNumb”PŞicy
+(cÚ¡ 
+¡d
+::
+¡ršg
+ 
+Çme
+)
+
+39 
+pŞic›s
+.
+	`push_back
+(
+¡d
+::
+make_unique
+<
+Numb”PŞicy
+>(
+Çme
+, 
+´oduùName
+, 
+»gi¡ryP©h
+));
+
+40 
+	}
+}
+
+42 
+	gPŞicyW©ch”
+::
+	$AddBoŞ—nPŞicy
+(cÚ¡ 
+¡d
+::
+¡ršg
+ 
+Çme
+)
+
+44 
+pŞic›s
+.
+	`push_back
+(
+¡d
+::
+make_unique
+<
+BoŞ—nPŞicy
+>(
+Çme
+, 
+´oduùName
+, 
+»gi¡ryP©h
+));
+
+45 
+	}
+}
+
+47 
+	gPŞicyW©ch”
+::
+AddUniÚPŞicy
+(cÚ¡ 
+¡d
+::
+¡ršg
+ 
+Çme
+, cÚ¡ std::
+veùÜ
+<¡d::¡ršg> &
+ty³s
+)
+
+49 
+pŞic›s
+.
+push_back
+(
+¡d
+::
+make_unique
+<
+UniÚPŞicy
+>(
+Çme
+, 
+´oduùName
+, 
+»gi¡ryP©h
+, 
+ty³s
+));
+
+52 
+	gPŞicyW©ch”
+::
+	$OnExecu‹
+(
+N­i
+::
+Env
+ 
+’v
+)
+
+54 ià((
+hªdËs
+[0] = 
+	`C»©eEv’t
+(
+NULL
+, 
+çl£
+, false, NULL)) == NULL)
+
+55  
+	`S‘E¼Ü
+("Failedo createƒxitƒvent");
+
+56 ià((
+hªdËs
+[1] = 
+	`C»©eEv’t
+(
+NULL
+, 
+çl£
+, false, NULL)) == NULL)
+
+57  
+	`S‘E¼Ü
+("Failedo create disposeƒvent");
+
+58 ià((
+hªdËs
+[2] = 
+	`C»©eEv’t
+(
+NULL
+, 
+çl£
+, false, NULL)) == NULL)
+
+59  
+	`S‘E¼Ü
+("Failedo create machine GPƒvent");
+
+60 ià((
+hªdËs
+[3] = 
+	`C»©eEv’t
+(
+NULL
+, 
+çl£
+, false, NULL)) == NULL)
+
+61  
+	`S‘E¼Ü
+("Failedo create user GPƒvent");
+
+62 ià(!
+	`Regi¡”GPNÙifiÿtiÚ
+(
+hªdËs
+[2], 
+TRUE
+))
+
+63  
+	`S‘E¼Ü
+("Failedo„egister machine GPƒvent");
+
+64 ià(!
+	`Regi¡”GPNÙifiÿtiÚ
+(
+hªdËs
+[3], 
+FALSE
+))
+
+65  
+	`S‘E¼Ü
+("Failedo„egister user GPƒvent");
+
+67 
+AsyncProg»ssQueueWÜk”
+::
+	`OnExecu‹
+(
+’v
+);
+
+68 
+	}
+}
+
+70 
+	gPŞicyW©ch”
+::
+	$Execu‹
+(cÚ¡ 
+ExecutiÚProg»ss
+ &
+´og»ss
+)
+
+72 
+boŞ
+ 
+fœ¡
+ = 
+Œue
+;
+
+74 
+TRUE
+)
+
+76 
+¡d
+::
+veùÜ
+<cÚ¡ 
+PŞicy
+ *> 
+upd©edPŞic›s
+;
+
+78 
+boŞ
+ 
+upd©e
+ = 
+çl£
+;
+
+79 
+upd©edPŞic›s
+.
+	`ş—r
+();
+
+80 autØ&
+pŞicy
+ : 
+pŞic›s
+)
+
+82 
+pŞicy
+->
+	`»äesh
+())
+
+84 
+PŞicyReäeshResuÉ
+::
+Upd©ed
+:
+
+85 
+PŞicyReäeshResuÉ
+::
+Removed
+:
+
+86 
+upd©edPŞic›s
+.
+	`push_back
+(
+pŞicy
+.
+	`g‘
+());
+
+87 
+upd©e
+ = 
+Œue
+;
+
+89 
+PŞicyReäeshResuÉ
+::
+Unchªged
+:
+
+90 
+upd©edPŞic›s
+.
+	`push_back
+(
+pŞicy
+.
+	`g‘
+());
+
+95 ià(
+fœ¡
+ || 
+upd©e
+)
+
+96 
+´og»ss
+.
+	`S’d
+(&
+upd©edPŞic›s
+[0], upd©edPŞic›s.
+	`size
+());
+
+98 
+fœ¡
+ = 
+çl£
+;
+
+100 autØ
+dwResuÉ
+ = 
+	`Wa™FÜMuÉËObjeùs
+(4, 
+hªdËs
+, 
+FALSE
+, 
+INFINITE
+);
+
+102 ià(
+dwResuÉ
+ =ğ
+WAIT_FAILED
+ || (dwResuÉ - 
+WAIT_OBJECT_0
+) == 0 || (dwResult - WAIT_OBJECT_0) == 1 )
+
+105 
+	}
+}
+
+107 
+	gPŞicyW©ch”
+::
+	$OnProg»ss
+(cÚ¡ 
+PŞicy
+ *cÚ¡ *
+pŞic›s
+, 
+size_t
+ 
+couÁ
+)
+
+109 
+HªdËScİe
+ 
+	`scİe
+(
+	`Env
+());
+
+110 autØ
+»suÉ
+ = 
+Objeù
+::
+	`New
+(
+	`Env
+());
+
+112 
+size_t
+ 
+i
+ = 0; i < 
+couÁ
+; i++)
+
+113 
+»suÉ
+.
+	`S‘
+(
+pŞic›s
+[
+i
+]->
+Çme
+,…Şic›s[i]->
+	`g‘V®ue
+(
+	`Env
+()));
+
+115 
+	`C®lback
+().
+	`C®l
+(
+	`Reûiv”
+().
+	`V®ue
+(), {
+»suÉ
+});
+
+116 
+	}
+}
+
+118 
+	gPŞicyW©ch”
+::
+	$OnOK
+(è{
+	}
+}
+
+120 
+PŞicyW©ch”
+::
+	$Di¥o£
+()
+
+122 
+	`S‘Ev’t
+(
+hªdËs
+[1]);
+
+123 
+	}
+}
+
+	@src/windows/RegistryPolicy.hh
+
+6 #iâdeà
+REGISTRY_POLICY_H
+
+
+7 
+	#REGISTRY_POLICY_H
+
+
+	)
+
+9 
+	~<Çpi.h
+>
+
+10 
+	~<wšdows.h
+>
+
+11 
+	~<İtiÚ®
+>
+
+12 
+	~<veùÜ
+>
+
+13 
+	~<®gÜ™hm
+>
+
+14 
+	~"../PŞicy.hh
+"
+
+16 
+usšg
+ 
+Çme¥aû
+ 
+	gN­i
+;
+
+18 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gT
+>
+
+19 şas 
+	cRegi¡ryPŞicy
+ : 
+public
+ 
+PŞicy
+
+
+21 
+public
+:
+
+22 
+Regi¡ryPŞicy
+(cÚ¡ 
+¡d
+::
+¡ršg
+ 
+Çme
+, cÚ¡ std::¡ršg &
+´oduùName
+, cÚ¡ std::
+veùÜ
+<
+DWORD
+>& 
+ty³s
+, cÚ¡ std::¡ršg &
+cu¡omRegi¡ryP©h
+ = "")
+
+23 : 
+PŞicy
+(
+Çme
+),
+
+24 
+»gi¡ryKey
+(
+cu¡omRegi¡ryP©h
+.
+em±y
+(è? ("Soáw¬e\\PŞic›s\\Miüosoá\\" + 
+´oduùName
+) : customRegistryPath),
+
+25 
+	$suµÜ‹dTy³s
+(
+ty³s
+) {}
+
+27 
+PŞicyReäeshResuÉ
+ 
+	$»äesh
+()
+
+29 autØ
+machše
+ = 
+	`»ad
+(
+HKEY_LOCAL_MACHINE
+);
+
+31 ià(
+machše
+.
+	`has_v®ue
+())
+
+33 ià(
+v®ue
+ !ğ
+machše
+)
+
+35 
+v®ue
+ = 
+machše
+;
+
+36  
+PŞicyReäeshResuÉ
+::
+Upd©ed
+;
+
+39  
+PŞicyReäeshResuÉ
+::
+Unchªged
+;
+
+42 autØ
+u£r
+ = 
+	`»ad
+(
+HKEY_CURRENT_USER
+);
+
+45 ià(!
+u£r
+.
+	`has_v®ue
+())
+
+47 ià(!
+v®ue
+.
+	`has_v®ue
+())
+
+48  
+PŞicyReäeshResuÉ
+::
+NÙS‘
+;
+
+50 
+v®ue
+.
+	`»£t
+();
+
+51  
+PŞicyReäeshResuÉ
+::
+Removed
+;
+
+54 ià(
+v®ue
+ !ğ
+u£r
+)
+
+56 
+v®ue
+ = 
+u£r
+;
+
+57  
+PŞicyReäeshResuÉ
+::
+Upd©ed
+;
+
+60  
+PŞicyReäeshResuÉ
+::
+Unchªged
+;
+
+61 
+	}
+}
+
+63 
+V®ue
+ 
+	$g‘V®ue
+(
+Env
+ 
+’v
+) const
+
+65 ià(!
+v®ue
+.
+	`has_v®ue
+())
+
+66  
+’v
+.
+	`Undefšed
+();
+
+68  
+	`g‘JSV®ue
+(
+’v
+, 
+v®ue
+.
+	`v®ue
+());
+
+69 
+	}
+}
+
+71 
+	g´Ùeùed
+:
+
+72 
+vœtu®
+ 
+T
+ 
+	$·r£Regi¡ryV®ue
+(
+LPBYTE
+ 
+bufãr
+, 
+DWORD
+ 
+bufãrSize
+, DWORD 
+ty³
+) const = 0;
+
+73 
+vœtu®
+ 
+V®ue
+ 
+	$g‘JSV®ue
+(
+Env
+ 
+’v
+, 
+T
+ 
+v®ue
+) const = 0;
+
+75 
+´iv©e
+:
+
+76 cÚ¡ 
+¡d
+::
+¡ršg
+ 
+»gi¡ryKey
+;
+
+77 cÚ¡ 
+¡d
+::
+veùÜ
+<
+DWORD
+> 
+suµÜ‹dTy³s
+;
+
+78 
+¡d
+::
+İtiÚ®
+<
+T
+> 
+v®ue
+;
+
+80 
+¡d
+::
+İtiÚ®
+<
+T
+> 
+	$»ad
+(
+HKEY
+ 
+roÙ
+)
+
+82 
+HKEY
+ 
+hKey
+;
+
+84 ià(
+ERROR_SUCCESS
+ !ğ
+	`RegO³nKeyEx
+(
+roÙ
+, 
+»gi¡ryKey
+.
+	`c_¡r
+(), 0, 
+KEY_READ
+, &
+hKey
+))
+
+85  
+¡d
+::
+nuÎİt
+;
+
+87 
+DWORD
+ 
+bufãrSize
+ = 0;
+
+88 
+DWORD
+ 
+ty³
+;
+
+91 autØ
+»suÉ
+ = 
+	`RegQu”yV®ueEx
+(
+hKey
+, 
+Çme
+.
+	`c_¡r
+(), 0, &
+ty³
+, 
+nuÎ±r
+, &
+bufãrSize
+);
+
+93 ià(
+ERROR_SUCCESS
+ !ğ
+»suÉ
+ && 
+ERROR_MORE_DATA
+ !=„esult)
+
+95 
+	`RegClo£Key
+(
+hKey
+);
+
+96  
+¡d
+::
+nuÎİt
+;
+
+99 ià(
+¡d
+::
+	`fšd
+(
+suµÜ‹dTy³s
+.
+	`begš
+(), suµÜ‹dTy³s.
+	`’d
+(), 
+ty³
+) == supportedTypes.end())
+
+101 
+	`RegClo£Key
+(
+hKey
+);
+
+102  
+¡d
+::
+nuÎİt
+;
+
+105 
+¡d
+::
+veùÜ
+<
+BYTE
+> 
+	`bufãr
+(
+bufãrSize
+);
+
+106 
+»suÉ
+ = 
+	`RegQu”yV®ueEx
+(
+hKey
+, 
+Çme
+.
+	`c_¡r
+(), 0, &
+ty³
+, 
+bufãr
+.
+	`d©a
+(), &
+bufãrSize
+);
+
+107 
+	`RegClo£Key
+(
+hKey
+);
+
+109 ià(
+ERROR_SUCCESS
+ !ğ
+»suÉ
+)
+
+110  
+¡d
+::
+nuÎİt
+;
+
+112  
+¡d
+::
+İtiÚ®
+<
+T
+>{
+	`·r£Regi¡ryV®ue
+(
+bufãr
+.
+	`d©a
+(), 
+bufãrSize
+, 
+ty³
+)};
+
+113 
+	}
+}
+
+	@src/windows/StringPolicy.cc
+
+6 
+	~"SŒšgPŞicy.hh
+"
+
+8 
+usšg
+ 
+Çme¥aû
+ 
+	gN­i
+;
+
+10 
+	gSŒšgPŞicy
+::
+	$SŒšgPŞicy
+(cÚ¡ 
+¡d
+::
+¡ršg
+ 
+Çme
+, cÚ¡ std::¡ršg &
+´oduùName
+, cÚ¡ std::¡ršg &
+»gi¡ryP©h
+)
+
+11 : 
+	`Regi¡ryPŞicy
+(
+Çme
+, 
+´oduùName
+, {
+REG_SZ
+, 
+REG_MULTI_SZ
+},„egi¡ryP©hè{}
+
+13 
+	g¡d
+::
+¡ršg
+ 
+SŒšgPŞicy
+::
+	$·r£Regi¡ryV®ue
+(
+LPBYTE
+ 
+bufãr
+, 
+DWORD
+ 
+bufãrSize
+, DWORD 
+ty³
+) const
+
+15 ià(
+ty³
+ =ğ
+REG_MULTI_SZ
+)
+
+17 
+¡d
+::
+¡ršg
+ 
+»suÉ
+;
+
+18 cÚ¡ *
+cu¼’t
+ = 
+»š‹½»t_ÿ¡
+<*>(
+bufãr
+);
+
+19 cÚ¡ *
+’d
+ = 
+»š‹½»t_ÿ¡
+<*>(
+bufãr
+è+ 
+bufãrSize
+;
+
+21 
+cu¼’t
+ < 
+’d
+ && *current != '\0')
+
+23 
+¡d
+::
+¡ršg
+ 
+	`lše
+(
+cu¼’t
+);
+
+24 ià(!
+»suÉ
+.
+	`em±y
+())
+
+26 
+»suÉ
+ += '\n';
+
+28 
+»suÉ
+ +ğ
+lše
+;
+
+29 
+cu¼’t
+ +ğ
+lše
+.
+	`Ëngth
+() + 1;
+
+32  
+»suÉ
+;
+
+36  
+¡d
+::
+	`¡ršg
+(
+»š‹½»t_ÿ¡
+<*>(
+bufãr
+), 
+bufãrSize
+ - 1);
+
+37 
+	}
+}
+
+39 
+V®ue
+ 
+	gSŒšgPŞicy
+::
+	$g‘JSV®ue
+(
+Env
+ 
+’v
+, 
+¡d
+::
+¡ršg
+ 
+v®ue
+) const
+
+41  
+SŒšg
+::
+	`New
+(
+’v
+, 
+v®ue
+);
+
+42 
+	}
+}
+
+	@src/windows/StringPolicy.hh
+
+6 #iâdeà
+STRING_POLICY_H
+
+
+7 
+	#STRING_POLICY_H
+
+
+	)
+
+9 
+	~<Çpi.h
+>
+
+10 
+	~<wšdows.h
+>
+
+11 
+	~"Regi¡ryPŞicy.hh
+"
+
+13 
+usšg
+ 
+Çme¥aû
+ 
+	gN­i
+;
+
+15 
+şass
+ 
+	gSŒšgPŞicy
+ : 
+public
+ 
+Regi¡ryPŞicy
+<
+¡d
+::
+¡ršg
+>
+
+17 
+public
+:
+
+18 
+SŒšgPŞicy
+(cÚ¡ 
+¡d
+::
+¡ršg
+ 
+Çme
+, cÚ¡ std::¡ršg &
+´oduùName
+, cÚ¡ std::¡ršg &
+»gi¡ryP©h
+ = "");
+
+20 
+	g´Ùeùed
+:
+
+21 
+¡d
+::
+¡ršg
+ 
+·r£Regi¡ryV®ue
+(
+LPBYTE
+ 
+bufãr
+, 
+DWORD
+ 
+bufãrSize
+, DWORD 
+ty³
+) const;
+
+22 
+V®ue
+ 
+g‘JSV®ue
+(
+Env
+ 
+’v
+, 
+¡d
+::
+¡ršg
+ 
+v®ue
+) const;
+
+	@src/windows/UnionPolicy.cc
+
+6 
+	~"UniÚPŞicy.hh
+"
+
+7 
+	~<®gÜ™hm
+>
+
+8 
+	~<wšdows.h
+>
+
+10 
+	gUniÚPŞicy
+::
+UniÚPŞicy
+(cÚ¡ 
+¡d
+::
+¡ršg
+ 
+Çme
+, cÚ¡ std::¡ršg &
+´oduùName
+, cÚ¡ std::¡ršg &
+cu¡omRegi¡ryP©h
+, cÚ¡ std::
+veùÜ
+<¡d::¡ršg> &
+ty³s
+)
+
+11 : 
+PŞicy
+(
+Çme
+),
+
+12 
+»gi¡ryKey
+(
+cu¡omRegi¡ryP©h
+.
+em±y
+(è? ("Soáw¬e\\PŞic›s\\Miüosoá\\" + 
+´oduùName
+) : customRegistryPath)
+
+14 cÚ¡‡utØ&
+ty³
+ : 
+ty³s
+) {
+
+15 
+acû±sBoŞ—n
+ =‡cû±sBoŞ—À|| 
+ty³
+ == "boolean";
+
+16 
+	gacû±sNumb”
+ = 
+acû±sNumb”
+ || 
+ty³
+ == "number";
+
+17 
+	gacû±sSŒšg
+ = 
+acû±sSŒšg
+ || 
+ty³
+ == "string";
+
+21 
+PŞicyReäeshResuÉ
+ 
+	gUniÚPŞicy
+::
+	$»äesh
+()
+
+23 autØ
+Ãxt
+ = 
+	`»ad
+(
+HKEY_LOCAL_MACHINE
+);
+
+24 ià(!
+Ãxt
+.
+	`has_v®ue
+())
+
+25 
+Ãxt
+ = 
+	`»ad
+(
+HKEY_CURRENT_USER
+);
+
+27 ià(
+v®ue
+ =ğ
+Ãxt
+)
+
+28  
+v®ue
+.
+	`has_v®ue
+(è? 
+PŞicyReäeshResuÉ
+::
+Unchªged
+ : PŞicyReäeshResuÉ::
+NÙS‘
+;
+
+29 autØ
+»moved
+ = 
+v®ue
+.
+	`has_v®ue
+(è&& !
+Ãxt
+.has_value();
+
+30 
+v®ue
+ = 
+Ãxt
+;
+
+31  
+»moved
+ ? 
+PŞicyReäeshResuÉ
+::
+Removed
+ : PŞicyReäeshResuÉ::
+Upd©ed
+;
+
+32 
+	}
+}
+
+34 
+	gN­i
+::
+V®ue
+ 
+UniÚPŞicy
+::
+	$g‘V®ue
+(
+N­i
+::
+Env
+ 
+’v
+) const
+
+36 ià(!
+v®ue
+.
+	`has_v®ue
+())
+
+37  
+’v
+.
+	`Undefšed
+();
+
+38 ià(
+¡d
+::
+hŞds_®‹º©ive
+<
+boŞ
+>(*
+v®ue
+))
+
+39  
+N­i
+::
+BoŞ—n
+::
+	`New
+(
+’v
+, 
+¡d
+::
+g‘
+<
+boŞ
+>(*
+v®ue
+));
+
+40 ià(
+¡d
+::
+hŞds_®‹º©ive
+<>(*
+v®ue
+))
+
+41  
+N­i
+::
+Numb”
+::
+	`New
+(
+’v
+, 
+¡d
+::
+g‘
+<>(*
+v®ue
+));
+
+42  
+N­i
+::
+SŒšg
+::
+	`New
+(
+’v
+, 
+¡d
+::
+g‘
+<¡d::
+¡ršg
+>(*
+v®ue
+));
+
+43 
+	}
+}
+
+45 
+	g¡d
+::
+İtiÚ®
+<
+UniÚPŞicyV®ue
+> 
+UniÚPŞicy
+::
+	$»ad
+(
+HKEY
+ 
+roÙ
+) const
+
+47 
+HKEY
+ 
+key
+;
+
+48 ià(
+	`RegO³nKeyEx
+(
+roÙ
+, 
+»gi¡ryKey
+.
+	`c_¡r
+(), 0, 
+KEY_READ
+, &
+key
+è!ğ
+ERROR_SUCCESS
+)
+
+49  
+¡d
+::
+nuÎİt
+;
+
+51 
+DWORD
+ 
+ty³
+;
+
+52 
+DWORD
+ 
+size
+ = 0;
+
+53 autØ
+¡©us
+ = 
+	`RegQu”yV®ueEx
+(
+key
+, 
+Çme
+.
+	`c_¡r
+(), 
+nuÎ±r
+, &
+ty³
+,‚uÎ±r, &
+size
+);
+
+54 ià(
+¡©us
+ !ğ
+ERROR_SUCCESS
+ && stu !ğ
+ERROR_MORE_DATA
+) {
+
+55 
+	`RegClo£Key
+(
+key
+);
+
+56  
+¡d
+::
+nuÎİt
+;
+
+59 
+¡d
+::
+veùÜ
+<
+BYTE
+> 
+	`bufãr
+(
+size
+);
+
+60 
+¡©us
+ = 
+	`RegQu”yV®ueEx
+(
+key
+, 
+Çme
+.
+	`c_¡r
+(), 
+nuÎ±r
+, &
+ty³
+, 
+bufãr
+.
+	`d©a
+(), &
+size
+);
+
+61 
+	`RegClo£Key
+(
+key
+);
+
+62 ià(
+¡©us
+ !ğ
+ERROR_SUCCESS
+)
+
+63  
+¡d
+::
+nuÎİt
+;
+
+65 ià(
+ty³
+ =ğ
+REG_DWORD
+ && 
+acû±sBoŞ—n
+ && 
+size
+ =ğ(
+DWORD
+))
+
+66  *
+»š‹½»t_ÿ¡
+<
+DWORD
+ *>(
+bufãr
+.
+	`d©a
+()) != 0;
+
+67 ià(
+ty³
+ =ğ
+REG_QWORD
+ && 
+acû±sNumb”
+ && 
+size
+ == ())
+
+68  
+¡©ic_ÿ¡
+<>(*
+»š‹½»t_ÿ¡
+<*>(
+bufãr
+.
+	`d©a
+()));
+
+69 ià((
+ty³
+ =ğ
+REG_SZ
+ ||y³ =ğ
+REG_MULTI_SZ
+è&& 
+acû±sSŒšg
+) {
+
+70 ià(
+ty³
+ =ğ
+REG_SZ
+ && 
+size
+ == 0)
+
+71  
+¡d
+::
+	`¡ršg
+();
+
+72 cÚ¡ *
+begš
+ = 
+»š‹½»t_ÿ¡
+<*>(
+bufãr
+.
+	`d©a
+());
+
+73 cÚ¡ *
+’d
+ = 
+begš
+ + 
+size
+;
+
+74 ià(
+ty³
+ =ğ
+REG_SZ
+) {
+
+75 cÚ¡ *
+‹rmš©Ü
+ = 
+¡d
+::
+	`fšd
+(
+begš
+, 
+’d
+, '\0');
+
+76  
+¡d
+::
+	`¡ršg
+(
+begš
+, 
+‹rmš©Ü
+);
+
+78 ià(
+size
+ < 2 || 
+’d
+[-1] != '\0' ||ƒnd[-2] != '\0')
+
+79  
+¡d
+::
+nuÎİt
+;
+
+80 
+¡d
+::
+¡ršg
+ 
+»suÉ
+;
+
+81 cÚ¡ *
+cu¼’t
+ = 
+begš
+;
+
+82 
+cu¼’t
+ < 
+’d
+ && *current != '\0') {
+
+83 cÚ¡ *
+‹rmš©Ü
+ = 
+¡d
+::
+	`fšd
+(
+cu¼’t
+, 
+’d
+, '\0');
+
+84 ià(!
+»suÉ
+.
+	`em±y
+())
+
+85 
+»suÉ
+ += '\n';
+
+86 
+»suÉ
+.
+	`­³nd
+(
+cu¼’t
+, 
+‹rmš©Ü
+);
+
+87 
+cu¼’t
+ = 
+‹rmš©Ü
+ =ğ
+’d
+ ?ƒnd :erminator + 1;
+
+89  
+»suÉ
+;
+
+91  
+¡d
+::
+nuÎİt
+;
+
+92 
+	}
+}
+
+	@src/windows/UnionPolicy.hh
+
+6 #iâdeà
+UNION_POLICY_H
+
+
+7 
+	#UNION_POLICY_H
+
+
+	)
+
+9 
+	~<İtiÚ®
+>
+
+10 
+	~<¡ršg
+>
+
+11 
+	~<v¬ŸÁ
+>
+
+12 
+	~<veùÜ
+>
+
+13 
+	~<wšdows.h
+>
+
+14 
+	~"../PŞicy.hh
+"
+
+16 
+usšg
+ 
+	gUniÚPŞicyV®ue
+ = 
+¡d
+::
+v¬ŸÁ
+<
+boŞ
+, , 
+	g¡d
+::
+¡ršg
+>;
+
+18 şas 
+	cUniÚPŞicy
+ : 
+public
+ 
+PŞicy
+
+
+20 
+public
+:
+
+21 
+UniÚPŞicy
+(cÚ¡ 
+¡d
+::
+¡ršg
+ 
+Çme
+, cÚ¡ std::¡ršg &
+´oduùName
+, cÚ¡ std::¡ršg &
+»gi¡ryP©h
+, cÚ¡ std::
+veùÜ
+<¡d::¡ršg> &
+ty³s
+);
+
+22 
+PŞicyReäeshResuÉ
+ 
+»äesh
+();
+
+23 
+	mN­i
+::
+V®ue
+ 
+	$g‘V®ue
+(
+N­i
+::
+Env
+ 
+’v
+) const;
+
+25 
+´iv©e
+:
+
+26 
+¡d
+::
+İtiÚ®
+<
+UniÚPŞicyV®ue
+> 
+	$»ad
+(
+HKEY
+ 
+roÙ
+) const;
+
+27 cÚ¡ 
+¡d
+::
+¡ršg
+ 
+»gi¡ryKey
+;
+
+28 
+boŞ
+ 
+acû±sBoŞ—n
+ = 
+çl£
+;
+
+29 
+boŞ
+ 
+acû±sNumb”
+ = 
+çl£
+;
+
+30 
+boŞ
+ 
+acû±sSŒšg
+ = 
+çl£
+;
+
+31 
+¡d
+::
+İtiÚ®
+<
+UniÚPŞicyV®ue
+> 
+v®ue
+;
+
+	@
+1
+.
+0
+25
+648
+src/Policy.hh
+src/PolicyWatcher.hh
+src/aix/PolicyWatcher.cc
+src/linux/PolicyWatcher.cc
+src/macos/BooleanPolicy.cc
+src/macos/BooleanPolicy.hh
+src/macos/NumberPolicy.cc
+src/macos/NumberPolicy.hh
+src/macos/PolicyWatcher.cc
+src/macos/PreferencesPolicy.hh
+src/macos/StringPolicy.cc
+src/macos/StringPolicy.hh
+src/macos/UnionPolicy.cc
+src/macos/UnionPolicy.hh
+src/main.cc
+src/windows/BooleanPolicy.cc
+src/windows/BooleanPolicy.hh
+src/windows/NumberPolicy.cc
+src/windows/NumberPolicy.hh
+src/windows/PolicyWatcher.cc
+src/windows/RegistryPolicy.hh
+src/windows/StringPolicy.cc
+src/windows/StringPolicy.hh
+src/windows/UnionPolicy.cc
+src/windows/UnionPolicy.hh

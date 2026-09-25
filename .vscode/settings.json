@@ -82,5 +82,7 @@
     "print": "cpp"
   },
   "git.branchProtection": ["main"],
-  "git.branchProtectionPrompt": "alwaysCommitToNewBranch"
+  "git.branchProtectionPrompt": "alwaysCommitToNewBranch",
+  "cscope-code.manualDatabasePath": "",
+  "cscope-code.manualSourceDirectory": ""
 }

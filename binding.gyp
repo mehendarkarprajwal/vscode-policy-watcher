@@ -44,6 +44,17 @@
                         "-O2", "-fstack-protector-strong"
                     ]
                 }],
+                ['OS=="aix"', {
+                    "sources": [
+                        "src/aix/PolicyWatcher.cc",
+                    ],
+                    "defines": [
+                        "AIX",
+                    ],
+                    "cflags": [
+                        "-O2", "-fstack-protector-strong"
+                    ]
+                }],
                 ["OS=='win'", {
                     "sources": [
                         "src/windows/PolicyWatcher.cc",
