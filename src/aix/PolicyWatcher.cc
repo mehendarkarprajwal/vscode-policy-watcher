@@ -21,8 +21,23 @@ void PolicyWatcher::AddStringPolicy(const std::string name) {}
 void PolicyWatcher::AddNumberPolicy(const std::string name) {}
 void PolicyWatcher::AddBooleanPolicy(const std::string name) {}
 void PolicyWatcher::AddUnionPolicy(const std::string name, const std::vector<std::string> &types) {}
-void PolicyWatcher::OnExecute(Napi::Env env) {}
-void PolicyWatcher::Execute(const ExecutionProgress &progress) {}
-void PolicyWatcher::OnProgress(const Policy *const *policies, size_t count) {}
+void PolicyWatcher::OnExecute(Napi::Env env)
+{
+  AsyncProgressQueueWorker::OnExecute(env);
+}
+
+void PolicyWatcher::Execute(const ExecutionProgress &progress)
+{
+  // Send one empty update so the JS callback is invoked and the caller unblocks.
+  progress.Send(nullptr, 0);
+}
+
+void PolicyWatcher::OnProgress(const Policy *const *policies, size_t count)
+{
+  HandleScope scope(Env());
+  auto result = Object::New(Env());
+  Callback().Call(Receiver().Value(), {result});
+}
+
 void PolicyWatcher::OnOK() {}
 void PolicyWatcher::Dispose() {}
